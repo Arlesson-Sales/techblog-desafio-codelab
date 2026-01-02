@@ -1,0 +1,64 @@
+.HeaderContainer {
+    padding: 20px;
+    font-size: clamp(10px, 2vw, 1rem);
+    background-color: var(--dark-50);
+
+    & > div {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+}
+
+.HeaderTitleZone  {
+    text-align: left;
+
+    & span {
+        color: var(--brand-color);
+    }
+
+    & > h2 {
+        font-size: clamp(13px, 2vw, 1.2rem);
+        font-weight: 300;
+        margin: 15px 0;
+    }
+
+    & > button {
+        border: none;
+        padding: 8px;
+        width: 150px;
+        outline: none;
+        cursor: pointer;
+        border-radius: 2px;
+        color: var(--dark-60);
+        transition: all 0.1s linear;
+        background-color: var(--brand-color);
+    }
+
+    & > button:hover {
+        background-color: var(--brand-color-1);
+    }
+}
+
+.HeaderLogoImg {
+    width: 300px;
+    user-select: none;
+}
+
+@media screen and (max-width: 768px) {
+    .HeaderContainer {
+        & > div {
+            flex-flow: column-reverse nowrap;
+        }
+    }
+
+    .HeaderTitleZone {
+        text-align: center;
+    }
+
+    .HeaderLogoImg {
+        width: 250px;
+    }
+}

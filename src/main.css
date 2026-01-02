@@ -1,0 +1,25 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.CentralizeContainer {
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+:root {
+    --brand-color: #846AFF;
+    --brand-color-1: #745de7;
+    --dark-10: #121214;
+    --dark-20: #7C7C8A;
+    --dark-30: #EAEAEA;
+    --dark-40: #EEEEFF;
+    --dark-50: #F8F8FF;
+    --dark-60: #FFFFFF;
+}

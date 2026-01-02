@@ -1,0 +1,42 @@
+.FormContainer {
+    width: clamp(320px, 80vw, 400px);
+    margin: 0 auto;
+    padding: 8px;
+
+    & > h1 {
+        padding: 40px 20px;
+        text-align: center;
+        font-size: clamp(1.5rem, 2vw, 1.7rem);
+    }
+
+    & > textarea {
+        resize: none;
+        height: 150px;
+        font-size: clamp(0.9rem, 2vw, 0.9rem);
+    }
+
+    & > input[type='submit'] {
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: 10px;
+        display: block;
+        cursor: pointer;
+        color: #ffffff;
+        margin-bottom: 20px;
+        background-color: var(--brand-color);
+    }
+
+    & > input[type='submit']:hover {
+        background-color: var(--brand-color-1);
+    }
+}
+
+.FormContactInput {
+    border: 1px solid rgba(0, 0, 0, .1);
+    margin-bottom: 20px;
+    display: block;
+    outline: none;
+    padding: 12px;
+    width: 100%;
+}
